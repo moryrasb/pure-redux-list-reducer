@@ -1,11 +1,11 @@
 
-import {ADD_OBJECT, REMOVE_OBJECT , SET_LIST_FOR_OBJECT , SET_OBJECT_ARRAY , SET_TEXT } from "./actions";
+import {ADD_ARRAY, REMOVE_OBJECT , SET_LIST_FOR_OBJECT , SET_OBJECT_ARRAY , SET_TEXT } from "./actions";
 
 const initialState = {};
 
 function reducer(state = initialState, action) {
     switch (action.type) {
-        case ADD_OBJECT: {
+        case ADD_ARRAY: {
             return {
                 ...state, [action.payload.stateName]: state[action.payload.stateName] ?
                     state[action.payload.stateName].concat(action.payload) : [].concat(action.payload)
