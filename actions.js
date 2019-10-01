@@ -1,4 +1,4 @@
-export const ADD_OBJECT = "ADD_OBJECT";
+export const ADD_ARRAY = "ADD_ARRAY";
 export const REMOVE_OBJECT = "REMOVE_OBJECT";
 export const SET_LIST_FOR_OBJECT = "SET_LIST";
 export const SET_OBJECT_ARRAY = "SET_OBJECT_ARRAY";
@@ -7,7 +7,7 @@ export const SET_TEXT = "SET_TEXT";
 
 export const addObjectAction = (payload) => (
     {
-        type: ADD_OBJECT,
+        type: ADD_ARRAY,
         payload
     }
 );
